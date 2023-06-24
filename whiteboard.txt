@@ -1,0 +1,25 @@
+Check for uniqueness in a string
+do not use arrays
+return a boolean
+
+input: "hello"
+output: "copywrite"
+
+function unique input string
+x2 for loops
+one to go through the string and another loop to check for repeats
+then compare these two loops
+one if statement
+edgecases: someone doesnt enter a string, uppercase
+
+
+function unique(string){
+  for(let i = 0; i < string.length; i++){
+    for(let j = i + 1; j < string.length; j++){
+      if(string[i] === string[j]){
+        return false;
+      }
+    }
+  }
+  return true;
+}
